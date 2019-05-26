@@ -2,6 +2,16 @@
 <html lang="en-US">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128632490-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-128632490-1');
+  </script>
+
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -31,15 +41,25 @@
     <div class="listContainer">
       <div class="list">
         <p>Mat A formelsamling</p>
-        <p>Opdateret 10 Maj 2019 6,4MB</p>
-        <a target="_blank" href="maple_docs/Maple - Matematik formelsamling stx A-niveau.mw">
-          <button>Maple 2018 (.mw)</button></a>
+        <p>13 Maj 2019 - 2.5 MB</p>
+        <a onclick="gtag('event', 'clicks', {'event_category': 'Inbound links', 'event_label': 'Mat A formelsamling'});"
+          href="https://hojelse.com/maple_docs/Maple-Matematik_formelsamling_stx_A-niveau.zip"
+          download="Maple-Matematik_formelsamling_stx_A-niveau.zip">
+          <button>Maple 2018 (zipped .mw)</button></a>
       </div>
       <div class="list">
-        <p>Expand Grouped Observations</p>
-        <p>Opdateret 10 Maj 2019 - 53KB</p>
-        <a target="_blank" href="maple_docs/Expand Grouped Observations.mw">
-          <button>Maple 2018 (.mw)</button></a>
+        <p>Procedure - Pool Grouped Observations</p>
+        <p>13 Maj 2019 - 7 KB</p>
+        <a onclick="gtag('event', 'clicks', {'event_category': 'Inbound links', 'event_label': 'Pool Grouped Observations'});"
+          href="/maple_docs/Pool_Grouped_Observations.zip" download="Pool_Grouped_Observations.zip">
+          <button>Maple 2018 (zipped .mw)</button></a>
+      </div>
+      <div class="list">
+        <p>Procedure - Outliers</p>
+        <p>13 Maj 2019 - 6 KB</p>
+        <a onclick="gtag('event', 'clicks', {'event_category': 'Inbound links', 'event_label': 'Outliers'});"
+          href="/maple_docs/Outliers.zip" download="Outliers.zip">
+          <button>Maple 2018 (zipped .mw)</button></a>
       </div>
     </div>
   </div>
