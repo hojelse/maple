@@ -24,11 +24,12 @@
   <script src="../scripts/jquery-3.2.1.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   -->
+
+  <!-- MathJax -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
   <!-- 'Font awesome' Library-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <!-- Bootstrap-->
-  <!--link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')-->
-  <!--script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')-->
 </head>
 
 <body>
@@ -61,6 +62,192 @@
           href="/maple_docs/Outliers.zip" download="Outliers.zip">
           <button>Maple 2018 (zipped .mw)</button></a>
       </div>
+    </div>
+
+
+
+    <div class="mathml">
+      <div>
+        <h1 style="margin-top:200px;">[work in progress]</h1>
+      </div>
+      <h2>
+        Mat A formelsamling - web version
+      </h2>
+      <p>
+        Kontakt mig gerne på info@hojelse.com hvis du finder fejl
+        <br><br>
+        Maple Mat A stx Formelsamling (Web version)
+        <br><br>
+        Dette er en udvidelse af "Matematik formelsamling, stx A-niveau, maj 2018" af undervisningsministeriet
+        <br>
+        På siden er der flettet formler fra formelsamlingen sammen med Maple procedurer (programmets
+        kommandoer/funktioner)
+        <br><br>
+      </p>
+
+      <div class="section">
+        <div class="formel">
+          <p>FORMELSAMLING</p>
+          Baseret på uvm formelsamling stx mat a maj 2018
+        </div>
+        <div class="maple">
+          <p>MAPLE</p>
+          Find uddybende beskrivelser af kommandoerne i dokumentation på nettet her:
+          http://www.maplesoft.com/support/help
+          eller 'Maple Help', downloadet lokalt med programmet, genvejstast F1 > Gym
+        </div>
+
+        <div class="section-title">
+          <h2>
+            Binomialfordelingen
+          </h2>
+          <svg height="20px" width="25px">
+            <polygon points="0,2 25,2 12.5,20" style="fill:#666;"></polygon>
+          </svg>
+        </div>
+
+        <div class="bloks">
+          <div class="maple">
+            Maple pakker i dette afsnit $$ with(Statistics): with(Gym): $$
+          </div>
+
+          <div class="formel">
+            <p>F249</p>
+            Binomialfordelt stokatisk variabel \(X\) med antalsparameter \(n\) og sandsynlighedsparameter \(p\)
+            $$ X \sim b(n,p) $$
+          </div>
+
+          <div class="formel">
+            <p>F250</p>
+            Binomialkoefficient \(K(n,r)\)
+            $$ K(n,r)= \binom{a}{b} = { n! \over r!(n-r)! } $$
+          </div>
+
+          <div class="formel">
+            <p>F252</p>
+            Sandsynlighedsfunktion for binomialfordelt stokastisk variabel \(X\)
+
+            $$ P(X=r)=K(n,r) \cdot p^r(1-p)^{n-r} $$
+          </div>
+          <div class="maple">
+            <p>M252</p>
+            <div class="input">
+              $$ X=RandomVariable(Binomial(n,p)) $$
+              $$ PDF(X,r) $$
+
+              $$ X=RandomVariable(Binomial(100,0.5)): $$
+              $$ PDF(X,45) $$
+            </div>
+            <div class="output">
+              $$ 0.04847429663\ Dirac(0.) $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F253</p>
+            Middelværdi \(&mu;\)
+            $$ &mu; = n \cdot p $$
+          </div>
+          <div class="maple">
+            <p>M253</p>
+            <div class="input">
+              $$ &mu; = 100 \cdot 0.5 $$
+            </div>
+            <div class="output">
+              $$ &mu; = 50.0 $$
+            </div>
+            <div class="input">
+              $$ &mu; = Mean(X) $$
+            </div>
+            <div class="output">
+              $$ &mu; = 50.0 $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F254</p>
+            Spredning \( &sigma; \)
+            $$ &sigma; = \sqrt{n \cdot p \cdot (1 - p)} $$
+          </div>
+          <div class="maple">
+            <p>M254</p>
+            <div class="input">
+              $$ &sigma; = \sqrt{100 \cdot 0.5 \cdot (1 - 0.5)} $$
+            </div>
+            <div class="output">
+              $$ &sigma; = 5.000000000 $$
+            </div>
+            <div class="input">
+              $$ &sigma; = \sqrt{Variance(X)} $$
+            </div>
+            <div class="output">
+              $$ &sigma; = 5.000000000 $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F255</p>
+            \(95\%\) konfidensinterval for populationens sandsynlighedsparameter \(p\) estimeret ud fra
+            stikprøveandelen \(\hat{p}\)
+
+            $$ \left[ \hat{p} - 2 \cdot { \sqrt{ \hat{p} \cdot ( 1 - \hat{p} ) } \over n}, \hat{p} + 2 \cdot { \sqrt {
+            \hat{p}
+            \cdot
+            (1 - \hat{p} ) } \over n} \right] $$
+          </div>
+
+          <div class="maple">
+            <p>M255</p>
+            <div class="input">
+              $$[Quantile(X,0.025),Quantile(X,0.975)]$$
+            </div>
+            <div class="output">
+              $$ [40., 60.] $$
+            </div>
+            <div class="input">
+              $$ [ invbin(100,0.5,0.025), invbin(100,0.5,0.975) ] $$
+            </div>
+            <div class="output">
+              $$ [40., 60.] $$
+            </div>
+            <div class="input">
+              $$ \left[ 0.5 - 2 \cdot { \sqrt{ 0.5 \cdot ( 1 - 0.5 ) } \over 100}, 0.5 - 2 \cdot { \sqrt{ 0.5 \cdot ( 1
+              -
+              0.5
+              )
+              } \over 100} \right] $$
+            </div>
+            <div class="output">
+              $$ [0.4000, 0.6000] $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F256</p>
+            Normalfordelingsapproksimation til binomialfordelt stokastisk variabel \(X\) med middelværdi \( &mu; = n
+            \cdot
+            p\)
+            og spredning
+            \(&sigma; = \sqrt{ n \cdot p \cdot (1 - p) } \)
+            $$ $$
+          </div>
+          <div class="maple">
+            <p>MF256</p>
+            <div class="input">
+              $$ DensityPlot(X, range = 30 .. 70, gridlines) $$
+            </div>
+          </div>
+
+        </div>
+
+        <div class="section-title">
+          <h2>
+            Normalfordelingen
+          </h2>
+        </div>
+
+      </div>
+
     </div>
   </div>
 </body>

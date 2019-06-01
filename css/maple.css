@@ -87,7 +87,7 @@ button:focus {
   background-color: #f8f8f8;
 }
 
-p {
+.list p {
   display: inline-block;
   margin-left: 20px;
   color: #666;
@@ -105,6 +105,73 @@ p:nth-child(2) {
 a {
   height: 100%;
   min-width: 50px;
+  cursor: pointer;
+}
+
+.formel {
+  background-color: #fafafa;
+  padding: 20px 40px;
+  margin-top: 10px;
+}
+
+.input {
+  color: #000;
+}
+
+.output {
+  color: #00f;
+}
+
+.mathml {
+  margin-top: 150px;
+}
+
+.maple {
+  background-color: #f4f4ff;
+  padding: 10px 40px;
+}
+
+.maple p {
+  color: #666;
+  font-weight: bold;
+}
+
+.formel p {
+  color: #666;
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 100px;
+}
+
+.section-title > h2 {
+  margin: 0;
+  color: #666;
+}
+
+.section-title > svg {
+  fill: #aaa;
+}
+
+.section-title {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  padding: 20px 0px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-title:hover {
   cursor: pointer;
 }
 /*# sourceMappingURL=maple.css.map */
