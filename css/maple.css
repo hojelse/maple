@@ -6,7 +6,7 @@ body {
 
 .wrapper {
   width: 90vw;
-  max-width: 750px;
+  max-width: 900px;
   position: relative;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
@@ -111,7 +111,14 @@ a {
 .formel {
   background-color: #fafafa;
   padding: 20px 40px;
+  padding-bottom: 20px;
   margin-top: 10px;
+}
+
+.maple {
+  background-color: #f4f4ff;
+  padding: 20px 40px;
+  padding-bottom: 20px;
 }
 
 .input {
@@ -124,11 +131,6 @@ a {
 
 .mathml {
   margin-top: 150px;
-}
-
-.maple {
-  background-color: #f4f4ff;
-  padding: 10px 40px;
 }
 
 .maple p {
@@ -145,16 +147,16 @@ h2 {
   margin-top: 100px;
 }
 
-.section-title > h2 {
+.sectionTitle > h2 {
   margin: 0;
   color: #666;
 }
 
-.section-title > svg {
+.sectionTitle > svg {
   fill: #aaa;
 }
 
-.section-title {
+.sectionTitle {
   margin-bottom: 40px;
   padding: 20px 0px;
   -webkit-transition: 0.2s ease-in-out;
@@ -170,11 +172,11 @@ h2 {
           justify-content: space-between;
 }
 
-.section-title:hover {
+.sectionTitle:hover {
   cursor: pointer;
 }
 
-.section-title svg {
+.sectionTitle svg {
   -webkit-transition: -webkit-transform 0.2s ease-out;
   transition: -webkit-transform 0.2s ease-out;
   transition: transform 0.2s ease-out;
@@ -185,7 +187,6 @@ h2 {
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
-  max-height: 300vh;
   margin-bottom: 80px;
 }
 
@@ -194,12 +195,21 @@ h2 {
 }
 
 .blocksClosed {
-  max-height: 0;
+  display: none;
   margin: 0;
 }
 
 .triangleClosed {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 900px) {
+  .input {
+    overflow: scroll;
+  }
+  .output {
+    overflow: scroll;
+  }
 }
 /*# sourceMappingURL=maple.css.map */

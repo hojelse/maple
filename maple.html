@@ -62,16 +62,13 @@
     </div>
 
 
-
     <div class="mathml">
-      <div>
-        <h1 style="margin-top:200px;">[work in progress]</h1>
+
+      <div class="header">
+        <h1>Mat A Formelsamling (web)</h1>
       </div>
-      <h2>
-        Mat A formelsamling - web version
-      </h2>
       <p>
-        Kontakt mig gerne på info@hojelse.com hvis du finder fejl
+        Kontakt mig gerne på info@hojelse.com hvis du finder fejl :)
         <br><br>
         Maple Mat A stx Formelsamling (Web version)
         <br><br>
@@ -83,31 +80,657 @@
       </p>
 
       <div class="section">
-        <div class="blocks">
+        <div class="blocks blocksClosed">
           <div class="formel">
             <p>FORMELSAMLING</p>
             Baseret på uvm formelsamling stx mat a maj 2018
+            <br><br>
+            https://uvm.dk/-/media/filer/uvm/udd/gym/pdf18/jun/180601-formelsamling-matematik-a---stx-2018.pdf?la=da
           </div>
           <div class="maple">
             <p>MAPLE</p>
             Find uddybende beskrivelser af kommandoerne i dokumentation på nettet her:
+            <br><br>
             http://www.maplesoft.com/support/help
-            eller 'Maple Help', downloadet lokalt med programmet, genvejstast F1 > Gym
+            <br><br>
+            eller 'Maple Help', burde være downloadet lokalt med programmet Maple, genvejstast F1 > Gym
           </div>
         </div>
 
-        <a onclick="sectionToggle(this);" class="section-title">
+        <a onclick="sectionToggle(this);" class="sectionTitle sectionTitleClosed">
           <h2>
-            Binomialfordelingen
+            Regneregler for integration
           </h2>
-          <svg height="20px" width="25px">
+          <svg class="triangleClosed" height="20px" width="25px">
             <path stroke="#666" stroke-width="3px" stroke-linecap="round" d="M2,5 12.5,18 23,5" style="fill:none;" />
           </svg>
         </a>
 
-        <div class="blocks">
+        <div class="blocks blocksClosed">
           <div class="maple">
-            Maple pakker i dette afsnit $$ with(Statistics): with(Gym): $$
+            ! mangler blocks
+          </div>
+        </div>
+
+        <a onclick="sectionToggle(this);" class="sectionTitle sectionTitleClosed">
+          <h2>
+            Regneregler for integration
+          </h2>
+          <svg class="triangleClosed" height="20px" width="25px">
+            <path stroke="#666" stroke-width="3px" stroke-linecap="round" d="M2,5 12.5,18 23,5" style="fill:none;" />
+          </svg>
+        </a>
+
+        <div class="blocks blocksClosed">
+          <div class="maple">
+            ! mangler blocks
+          </div>
+        </div>
+
+        <a onclick="sectionToggle(this);" class="sectionTitle sectionTitleClosed">
+          <h2>
+            Areal og rumfang
+          </h2>
+          <svg class="triangleClosed" height="20px" width="25px">
+            <path stroke="#666" stroke-width="3px" stroke-linecap="round" d="M2,5 12.5,18 23,5" style="fill:none;" />
+          </svg>
+        </a>
+
+        <div class="blocks blocksClosed">
+          <div class="maple">
+            ! mangler blocks
+          </div>
+        </div>
+
+        <a onclick="sectionToggle(this);" class="sectionTitle sectionTitleClosed">
+          <h2>
+            Differentialligninger
+          </h2>
+          <svg class="triangleClosed" height="20px" width="25px">
+            <path stroke="#666" stroke-width="3px" stroke-linecap="round" d="M2,5 12.5,18 23,5" style="fill:none;" />
+          </svg>
+        </a>
+
+        <div class="blocks blocksClosed">
+          <div class="maple">
+            ! mangler blocks
+            <br><br>
+            Maple pakker i dette afsnit
+            <br><br>
+            \( with(DEtools): with(plots): \)
+          </div>
+        </div>
+
+        <a onclick="sectionToggle(this);" class="sectionTitle sectionTitleClosed">
+          <h2>
+            Vektorfunktioner
+          </h2>
+          <svg class="triangleClosed" height="20px" width="25px">
+            <path stroke="#666" stroke-width="3px" stroke-linecap="round" d="M2,5 12.5,18 23,5" style="fill:none;" />
+          </svg>
+        </a>
+
+        <div class="blocks blocksClosed">
+          <div class="maple">
+            ! mangler img
+            <br><br>
+            Maple pakker i dette afsnit
+            <br><br>
+            \( with(Student[VectorCalculus]); \)
+          </div>
+
+          <div class="formel">
+            <p>F184</p>
+            Vektorfunktioner med koordinatfunktioner \(x(t)\) og sandsynligheder \(y(t)\)
+            $$ \vec s = \begin{bmatrix}x(t)\\y(t)\end{bmatrix} $$
+          </div>
+          <div class="maple">
+            <p>M184</p>
+            <div class="input">
+              \( x(t) := t^3 - t: \)
+              <br><br>
+              \( y(t) := {1 \over 2} t^2 - t: \)
+              <br><br>
+              \( \vec s(t) := \langle x(t), y(t) \rangle : \)
+              <br><br>
+              \( \vec s(t) \)
+            </div>
+            <div class="output">
+              $$ \begin{bmatrix} t^3 - t \\ {1 \over 2} t^2 - t \end{bmatrix} $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F185</p>
+            Hastighedsfunktion
+            $$ \vec v = \vec s'(t) $$
+          </div>
+          <div class="maple">
+            <p>M185</p>
+            <div class="input">
+              \( \vec s(t) := \left\langle t^3 - t, {1 \over 2} t^2 - t \right\rangle : \)
+              <br><br>
+              \( \vec v(t) = \vec s'(t) : \)
+              <br><br>
+              \( \vec v(t) \)
+            </div>
+            <div class="output">
+              $$ \begin{bmatrix} 3\ t^2 \\ 1 - t \end{bmatrix} $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F186</p>
+            Accelerationsfunktion
+            $$ \vec a(t) = \vec v'(t) = \vec s''(t) $$
+          </div>
+          <div class="maple">
+            <p>M186</p>
+            <div class="input">
+              \( \vec s(t) := \langle t^3 - t, {1 \over 2} t^2 - t \rangle : \)
+              <br><br>
+              \( \vec v(t) = \vec s'(t) : \)
+              <br><br>
+              \( \vec a(t) = \vec v'(t) : \)
+              <br><br>
+              \( \vec a(t) \)
+            </div>
+            <div class="output">
+              $$ \begin{bmatrix} 6\ t \\ 1 \end{bmatrix} $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F187</p>
+            Parameterfremstilling for banekurven, \(x(t)\) og \(y(t)\) er koordinatfunktioner
+            $$ \overrightarrow{OP} = \begin{bmatrix}x(t)\\y(t)\end{bmatrix} $$
+          </div>
+          <div class="maple">
+            <p>M187</p>
+            <div class="input">
+              \( x(t) := t^3 - t : \)
+              <br><br>
+              \( y(t) := {1 \over 2} t^2 - t : \)
+              <br><br>
+              \( \overrightarrow{OP} = \langle x(t), y(t) \rangle : \)
+            </div>
+            <div class="output">
+              $$ \begin{bmatrix} t^3 - t \\ {1 \over 2} t^2 - t \end{bmatrix} $$
+            </div>
+            <div class="input">
+              \( SpaceCurve\left(\left\langle t^3 - t, {1 \over 2} t^2 - t \right\rangle , t=-1.5..1.5, caption=x
+              \right)
+              \)
+            </div>
+            <div class="output">
+              $$ [img] $$
+            </div>
+          </div>
+          <div class="maple">
+            <p>M187.5</p>
+            3D banekurve
+            <br><br>
+            <div class="input">
+              \( spacecurve ([ cos(t), sin(t), t], t=0..4 \pi, axes=frame) \)
+            </div>
+            <div class="output">
+              $$ [img] $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F188</p>
+            Retningsvektor \( \vec v\) for tangenten i punktet \( P_0 \) svarende til parameterværdien \( t_0 \)
+            $$ \vec v(t_0) = \vec s'(t_0) = \begin{bmatrix}x'(t_0)\\y'(t_0)\end{bmatrix} $$
+          </div>
+          <div class="maple">
+            <p>M188</p>
+            <div class="input">
+              \( x(t) := t^3 - t : \)
+              <br><br>
+              \( y(t) := {1 \over 2} t^2 - t : \)
+              <br><br>
+              \( \vec v(0) = \langle x'(0), y'(0) \rangle \)
+            </div>
+            <div class="output">
+              $$ \vec v(0) = \begin{bmatrix} -1 \\ -1 \end{bmatrix} $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F189</p>
+            Parameterfremstilling for den rette linje \(l\) gennem punktet \( P_0(x_0,y_0) \) med retningsvektor \(
+            \vec
+            r = \begin{bmatrix}r_1\\r_2\end{bmatrix} \)
+            $$ \begin{bmatrix}x(t)\\y(t)\end{bmatrix} = \begin{bmatrix}x_0\\y_0\end{bmatrix} + t \cdot
+            \begin{bmatrix}r_1\\r_2\end{bmatrix} $$
+          </div>
+
+          <div class="formel">
+            <p>F190</p>
+            Parameterfremstilling for en cirkel med centrum \(C(a,b)\) og radius \(r\)
+            $$ \begin{bmatrix}x(t)\\y(t)\end{bmatrix} = \begin{bmatrix}a\\b\end{bmatrix} +
+            \begin{bmatrix}r \cdot cos(t)\\r \cdot sin(t)\end{bmatrix} $$
+          </div>
+
+        </div>
+
+        <a onclick="sectionToggle(this);" class="sectionTitle sectionTitleClosed">
+          <h2>
+            Funktioner af to variable
+          </h2>
+          <svg class="triangleClosed" height="20px" width="25px">
+            <path stroke="#666" stroke-width="3px" stroke-linecap="round" d="M2,5 12.5,18 23,5" style="fill:none;" />
+          </svg>
+        </a>
+
+        <div class="blocks blocksClosed">
+          <div class="maple">
+            ! mangler img og plots
+            <br><br>
+            Maple pakker i dette afsnit
+            <br><br>
+            \( with(plots); with(plottools); \)
+          </div>
+
+          <div class="formel">
+            <p>F191</p>
+            Grafen for en funktion af to variable
+            $$ z = f(x,y) $$
+          </div>
+
+          <div class="formel">
+            <p>F192</p>
+            Grafen for en funktion af to variable
+            $$ z = g(x) = f(x,y) ,\ \textrm{hvor} \ y \ \textrm{holdes fast (blå kurve)} $$
+            $$ z = h(x) = f(x,y) ,\ \textrm{hvor} \ x \ \textrm{holdes fast (rød kurve)} $$
+          </div>
+          <div class="maple">
+            <p>F192</p>
+            <div class="input">
+              \( plot1 := plot3d(-x^2-y^2): \)
+              <br><br>
+              \( plot2 := plot3d(-x^2-y^2,x=4.9..5.1,y=-10..10): \)
+              <br><br>
+              \( plot3 := plot3d(-x^2-y^2,x=-10..10,y=4.9..5.1): \)
+              <br><br>
+              \( display(plot1,plot2,plot3) \)
+            </div>
+            <div class="output">
+              $$ [img] $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F193</p>
+            Niveaukurve for \(f\) i \(xy\)-plan
+            $$ f(x,y)=k $$
+          </div>
+          <div class="maple">
+            Plot niveaukurve for \( z = f(x,y) = -x^2-y^2 = -0.5\)
+            <div class="input">
+              \( F := (x,y) \rightarrow -x^2-y^2 : \)
+              <br><br>
+              \( level\_plot := contourplot(F(x,y),x=-1..1,y=-1..1, color=red, thickness=2, contours=[-0.5]) : \)
+              <br><br>
+              \( surf\_plot := plot3d(F(x,y), x=-1..1, y=-1..1; view=-1..0) : \)
+              <br><br>
+              \( f := transform((x,y) \rightarrow [x,y,F(x,y)]) : \)
+              <br><br>
+              \( display(\{ surf\_plot, f(level\_plot) \}, axes=framed, labels=[x,y,z]) \)
+            </div>
+            <div class="output">
+              $$ [img] $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F194</p>
+            De partielle afledede af \( f(x,y) \) mht. \(x\) og \(y\)
+            $$ diff(f(x,y),x) = {\partial \over \partial \ x} $$
+            $$ diff(f(x,y),y) = {\partial \over \partial \ y} $$
+          </div>
+          <div class="maple">
+            <p>F194</p>
+            <div class="input">
+              \( f(x,y) := x^3 - 3xy + y^3: \)
+            </div>
+            <br>
+            <div class="input">
+              \( {\partial \over \partial \ x} f(x,y) \)
+            </div>
+            <div class="output">
+              $$ 3x^2 - 3y $$
+            </div>
+            <div class="input">
+              \( {\partial \over \partial \ y} f(x,y) \)
+            </div>
+            <div class="output">
+              $$ 3y^2 - 3x $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F195</p>
+            Gradienten for \(f\)
+            $$ \nabla f(x,y) = \begin{bmatrix} f_x'(x,y) \\ f_y'(x,y) \end{bmatrix} $$
+          </div>
+          <div class="maple">
+            <p>F195</p>
+            <div class="input">
+              \( grad = \langle diff(f(x,y),x), diff(f(x,y),y) \rangle \)
+            </div>
+            <div class="output">
+              $$ grad = \begin{bmatrix} 3x^2 - 3y \\ 3y^2 - 3x \end{bmatrix} $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F196</p>
+            Tangentplanen \(z\) i punktet \( P_0(x_0,y_0,z_0) \)
+            $$ z = z_0 + p (x - x_0) + q (y - y_0) \ , $$
+            hvor
+            $$ p = f_x'(x_0, y_0) \ \textrm{og} \ q = f_y'(x_0, y_0) $$
+          </div>
+          <div class="maple">
+            <p>F196</p>
+            <div class="input">
+              \( f(x,y) := {6y \over x^2 + y^2 + 2} : \)
+            </div>
+            <div class="input">
+              \( TangentPlane(f(x,y), x=1, y=1) \)
+            </div>
+            <div class="output">
+              $$ \begin{bmatrix} x \\ y \\ -{3x \over 4} + {3 \over 4} + {3y \over 4} \end{bmatrix} $$
+            </div>
+            <div class="input">
+              \( t(x,y) := TangentPlane(f(x,y), x=1, y=1) : \)
+            </div>
+            <div class="input">
+              \( plot3d( \{ f(x,y), t(x,y) \}, x=-2..2, y=-2..2) \)
+            </div>
+            <div class="output">
+              $$ [img] $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F197</p>
+            Stationært punkt \( P_0(x_0,y_0,z_0) \) for \(f\)
+            $$ \nabla f(x,y) = \vec 0 = \begin{bmatrix} 0 \\ 0 \end{bmatrix} $$
+            $$ f_x'(x_0, y_0) = 0 \ \textrm{og} \ f_y'(x_0, y_0) = 0 $$
+          </div>
+
+          <div class="formel">
+            Arten af stationære punkter for \(f\), hvor <br>
+            $$ r=f_{xx}''(x,y) , $$
+            $$ s=f_{xy}''(x,y) = f_{yx}''(x,y) $$
+            $$ t=f_{yy}''(x,y) $$
+          </div>
+          <div class="maple">
+            <div class="input">
+              \( f(x,y) := x^3 - 3xy + y^3 : \)
+            </div>
+            <div class="input">
+              \( r = {\partial^2 \over \partial \ x^2} f(x,y) \)
+            </div>
+            <div class="output">
+              $$ r = 6x $$
+            </div>
+            <div class="input">
+              \( r = {\partial^2 \over \partial \ x \ \partial \ y} f(x,y) \)
+            </div>
+            <div class="output">
+              $$ s = -3 $$
+            </div>
+            <div class="input">
+              \( r = {\partial^2 \over \partial \ y^2} f(x,y) \)
+            </div>
+            <div class="output">
+              $$ t = 6y $$
+            </div>
+
+          </div>
+
+          <div class="formel">
+            <p>F198</p>
+            Lokalt maksimum i \( P_0(x_0,y_0,z_0) \)
+            $$ r \cdot t - s^2 \gt 0 \ \textrm{og} \ r \lt 0 $$
+          </div>
+
+          <div class="formel">
+            <p>F199</p>
+            Lokalt minimum i \( Q_0(x_0,y_0,z_0) \)
+            $$ r \cdot t - s^2 \gt 0 \ \textrm{og} \ r \gt 0 $$
+          </div>
+          <div class="maple">
+            <p>M199</p>
+            <div class="input">
+              for punkt \( Q(1,1,-1) \)
+            </div>
+            <br>
+            <div class="input">
+              \( 6x \cdot 6y - (-3)^2 \gt 0, \ 6x \gt 0 \)
+            </div>
+            <div class="input">
+              \( 6(1) \cdot 6(1) - (-3)^2 \gt 0, \ 6(1) \gt 0 \)
+            </div>
+            <div class="output">
+              $$ 27 \gt 0, \ 0 \lt 6 $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F200</p>
+            Saddelpunkt i \( P_0(x_0,y_0,z_0) \)
+            $$ r \cdot t - s^2 \lt 0 $$
+          </div>
+          <div class="maple">
+            <p>M200</p>
+            <div class="input">
+              for punkt \( P(0,0,0) \)
+            </div>
+            <br>
+            <div class="input">
+              \( 6x \cdot 6y - (-3)^2 \gt 0, \ 6x \gt 0 \)
+            </div>
+            <div class="input">
+              \( 6(1) \cdot 6(1) - (-3)^2 \gt 0, \ 6(1) \gt 0 \)
+            </div>
+            <div class="output">
+              $$ 27 \lt 0 $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F201</p>
+            Arten ubestemt
+            $$ r \cdot t - s^2 = 0 $$
+          </div>
+
+        </div>
+
+        <a onclick="sectionToggle(this);" class="sectionTitle sectionTitleClosed">
+          <h2>
+            Grupperede observationer
+          </h2>
+          <svg class="triangleClosed" height="20px" width="25px">
+            <path stroke="#666" stroke-width="3px" stroke-linecap="round" d="M2,5 12.5,18 23,5" style="fill:none;" />
+          </svg>
+        </a>
+
+        <div class="blocks blocksClosed">
+          <div class="maple">
+            ! mangler blocks
+            <br><br>
+            Maple pakker i dette afsnit
+            <br><br>
+            \( with(Gym): with(Statistics): \)
+          </div>
+        </div>
+
+        <a onclick="sectionToggle(this);" class="sectionTitle sectionTitleClosed">
+          <h2>
+            Ugrupperede observationer
+          </h2>
+          <svg class="triangleClosed" height="20px" width="25px">
+            <path stroke="#666" stroke-width="3px" stroke-linecap="round" d="M2,5 12.5,18 23,5" style="fill:none;" />
+          </svg>
+        </a>
+
+        <div class="blocks blocksClosed">
+          <div class="maple">
+            ! mangler blocks
+            <br><br>
+            Maple pakker i dette afsnit
+            <br><br>
+            \( with(Gym): with(Statistics): \)
+          </div>
+        </div>
+
+        <a onclick="sectionToggle(this);" class="sectionTitle sectionTitleClosed">
+          <h2>
+            Lineær regression
+          </h2>
+          <svg class="triangleClosed" height="20px" width="25px">
+            <path stroke="#666" stroke-width="3px" stroke-linecap="round" d="M2,5 12.5,18 23,5" style="fill:none;" />
+          </svg>
+        </a>
+
+        <div class="blocks blocksClosed">
+          <div class="maple">
+            ! mangler blocks
+            <br><br>
+            Maple pakker i dette afsnit
+            <br><br>
+            \( with(Gym): with(ArrayTools): \)
+          </div>
+        </div>
+
+        <a onclick="sectionToggle(this);" class="sectionTitle sectionTitleClosed">
+          <h2>
+            Kombinatorik
+          </h2>
+          <svg class="triangleClosed" height="20px" width="25px">
+            <path stroke="#666" stroke-width="3px" stroke-linecap="round" d="M2,5 12.5,18 23,5" style="fill:none;" />
+          </svg>
+        </a>
+
+        <div class="blocks blocksClosed">
+          <div class="maple">
+            ! mangler blocks
+          </div>
+        </div>
+
+        <a onclick="sectionToggle(this);" class="sectionTitle sectionTitleClosed">
+          <h2>
+            Sandsynlighedsregning
+          </h2>
+          <svg class="triangleClosed" height="20px" width="25px">
+            <path stroke="#666" stroke-width="3px" stroke-linecap="round" d="M2,5 12.5,18 23,5" style="fill:none;" />
+          </svg>
+        </a>
+
+        <div class="blocks blocksClosed">
+          <div class="maple">
+            ! mangler blocks og billeder
+            <br><br>
+            Maple pakker i dette afsnit
+            <br><br>
+            \( with(Statistics): with(Gym): with(ArrayTools): \)
+          </div>
+
+          <div class="formel">
+            <p>F234</p>
+            Sandsynlighedsfelt med udfaldsrum \(U\) og sandsynligheder \(p\)
+            $$ (U,p) $$
+          </div>
+
+          <div class="formel">
+            <p>F244</p>
+            Sandsynlighedsfordelingstabel for en stokatisk variabel \(X\).
+            $$ [tabel] $$
+          </div>
+
+          <div class="formel">
+            <p>F245</p>
+            Søjlediagram.
+            <br>
+            Højde af søjle svarer til sandsynlighed af udfald
+            $$ [img] $$
+          </div>
+
+          <div class="formel">
+            <p>F246</p>
+            Varians af en stokatisk variabel \(X\)
+            $$ &mu; = E(X) = \sum_{i=1}^n x_i \cdot P(X=x_i) $$
+            $$ &mu; = E(X) = x_1 \cdot p_1 + x_2 \cdot p_2 + ... + x_n \cdot p_n $$
+          </div>
+          <div class="maple">
+            <p>M246</p>
+            <div class="input">
+              \( Var(X) = &sigma;^2 = varians(data) \)
+            </div>
+            <div class="output">
+              $$ Var(X) = &sigma;^2 = 12.5344387768905 $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F247</p>
+            Varians af en stokatisk variabel \(X\)
+            $$ Var(X) = \sum_{i=1}^n (x_i - &mu;) \cdot P(X=x_i) $$
+            $$ Var(X) = (x_1 - &mu;)^2 \cdot p_1 + (x_2 - &mu;)^2 \cdot p_2 + ... + (x_n - &mu;)^2 \cdot p_n $$
+          </div>
+          <div class="maple">
+            <p>M247</p>
+            <div class="input">
+              \( Var(X) = &sigma;^2 = varians(data) \)
+            </div>
+            <div class="output">
+              $$ Var(X) = &sigma;^2 = 12.5344387768905 $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F248</p>
+            Spredning af en stokatisk variabel \(X\)
+            $$ &sigma; = &sigma;(X) = \sqrt{Var(X)} $$
+          </div>
+          <div class="maple">
+            <p>M248</p>
+            <div class="input">
+              \( &sigma; = spredning(data) \)
+            </div>
+            <div class="output">
+              $$ &sigma; = 3.54040093448335 $$
+            </div>
+            <div class="input">
+              \( &sigma; = \sqrt{varians(data)} \)
+            </div>
+            <div class="output">
+              $$ &sigma; = 3.54040093448335 $$
+            </div>
+          </div>
+
+        </div>
+
+        <a onclick="sectionToggle(this);" class="sectionTitle sectionTitleClosed">
+          <h2>
+            Binomialfordelingen
+          </h2>
+          <svg class="triangleClosed" height="20px" width="25px">
+            <path stroke="#666" stroke-width="3px" stroke-linecap="round" d="M2,5 12.5,18 23,5" style="fill:none;" />
+          </svg>
+        </a>
+
+        <div class="blocks blocksClosed">
+          <div class="maple">
+            ! mangler billeder
+            <br><br>
+            Maple pakker i dette afsnit
+            <br><br>
+            \( with(Statistics): with(Gym): \)
           </div>
 
           <div class="formel">
@@ -125,17 +748,14 @@
           <div class="formel">
             <p>F252</p>
             Sandsynlighedsfunktion for binomialfordelt stokastisk variabel \(X\)
-
             $$ P(X=r)=K(n,r) \cdot p^r(1-p)^{n-r} $$
           </div>
           <div class="maple">
             <p>M252</p>
             <div class="input">
-              $$ X=RandomVariable(Binomial(n,p)) $$
-              $$ PDF(X,r) $$
-
-              $$ X=RandomVariable(Binomial(100,0.5)): $$
-              $$ PDF(X,45) $$
+              \( X=RandomVariable(Binomial(100,0.5)): \)
+              <br>
+              \( PDF(X,45) \)
             </div>
             <div class="output">
               $$ 0.04847429663\ Dirac(0.) $$
@@ -150,13 +770,13 @@
           <div class="maple">
             <p>M253</p>
             <div class="input">
-              $$ &mu; = 100 \cdot 0.5 $$
+              \( &mu; = 100 \cdot 0.5 \)
             </div>
             <div class="output">
               $$ &mu; = 50.0 $$
             </div>
             <div class="input">
-              $$ &mu; = Mean(X) $$
+              \( &mu; = Mean(X) \)
             </div>
             <div class="output">
               $$ &mu; = 50.0 $$
@@ -171,13 +791,13 @@
           <div class="maple">
             <p>M254</p>
             <div class="input">
-              $$ &sigma; = \sqrt{100 \cdot 0.5 \cdot (1 - 0.5)} $$
+              \( &sigma; = \sqrt{100 \cdot 0.5 \cdot (1 - 0.5)} \)
             </div>
             <div class="output">
               $$ &sigma; = 5.000000000 $$
             </div>
             <div class="input">
-              $$ &sigma; = \sqrt{Variance(X)} $$
+              \( &sigma; = \sqrt{Variance(X)} \)
             </div>
             <div class="output">
               $$ &sigma; = 5.000000000 $$
@@ -194,27 +814,27 @@
             \cdot
             (1 - \hat{p} ) } \over n} \right] $$
           </div>
-
           <div class="maple">
             <p>M255</p>
             <div class="input">
-              $$[Quantile(X,0.025),Quantile(X,0.975)]$$
+              \( [Quantile(X,0.025),Quantile(X,0.975)] \)
             </div>
             <div class="output">
               $$ [40., 60.] $$
             </div>
             <div class="input">
-              $$ [ invbin(100,0.5,0.025), invbin(100,0.5,0.975) ] $$
+              \( [ invbin(100,0.5,0.025), invbin(100,0.5,0.975) ] \)
             </div>
             <div class="output">
               $$ [40., 60.] $$
             </div>
             <div class="input">
-              $$ \left[ 0.5 - 2 \cdot { \sqrt{ 0.5 \cdot ( 1 - 0.5 ) } \over 100}, 0.5 - 2 \cdot { \sqrt{ 0.5 \cdot ( 1
+              \( \left[ 0.5 - 2 \cdot { \sqrt{ 0.5 \cdot ( 1 - 0.5 ) } \over 100}, 0.5 - 2 \cdot { \sqrt{ 0.5 \cdot (
+              1
               -
               0.5
               )
-              } \over 100} \right] $$
+              } \over 100} \right] \)
             </div>
             <div class="output">
               $$ [0.4000, 0.6000] $$
@@ -233,31 +853,304 @@
           <div class="maple">
             <p>MF256</p>
             <div class="input">
-              $$ DensityPlot(X, range = 30 .. 70, gridlines) $$
+              \( DensityPlot(X, range = 30 .. 70, gridlines) \)
+            </div>
+            <div class="output">
+              $$ [img] $$
             </div>
           </div>
 
         </div>
 
-        <a onclick="sectionToggle(this);" class="section-title">
+        <a onclick="sectionToggle(this);" class="sectionTitle sectionTitleClosed">
           <h2>
             Normalfordelingen
           </h2>
-          <svg height="20px" width="25px">
+          <svg class="triangleClosed" height="20px" width="25px">
             <path stroke="#666" stroke-width="3px" stroke-linecap="round" d="M2,5 12.5,18 23,5" style="fill:none;" />
           </svg>
         </a>
 
-        <div class="blocks">
+        <div class="blocks blocksClosed">
+
           <div class="maple">
-            Maple pakker i dette afsnit $$ with(Statistics): with(Gym): $$
+            Maple pakker i dette afsnit
+            <br><br>
+            <div class="input">
+              \( with(Statistics): \)
+            </div>
           </div>
 
           <div class="formel">
-            <p>F249</p>
-            Binomialfordelt stokatisk variabel \(X\) med antalsparameter \(n\) og sandsynlighedsparameter \(p\)
-            $$ X \sim b(n,p) $$
+            <p>F257</p>
+            <i>Standardnormalfordelt stokastisk variabel \(X\) </i>
+            $$ X \sim N(0,1) $$
           </div>
+
+          <div class="maple">
+            <p>M257</p>
+            <div class="input">
+              \( X:=RandomVariable(Normal(0,1)): \)
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F258</p>
+            Middelværdi
+            $$ &mu; = E(X) = 0 $$
+          </div>
+
+          <div class="maple">
+            <p>M258</p>
+            <div class="input">
+              \( &mu; = Mean(X) \)
+            </div>
+            <div class="output">
+              $$ &mu; = 0 $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F259</p>
+            Spredning
+            $$ &sigma; = &sigma;(X) = 1 $$
+          </div>
+
+          <div class="maple">
+            <p>M259</p>
+            <div class="input">
+              \( &sigma;= \sqrt{Variance(X)} \)
+            </div>
+            <div class="output">
+              $$ &sigma; = 1 $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F260</p>
+            Tæthedsfunktion
+            $$ &phi;(x) = {1 \over \sqrt{2} } \mathrm{e}^{ -{1 \over 2} x^2 } $$
+          </div>
+          <div class="maple">
+            <p>M260</p>
+            <div class="input">
+              \( &phi;(x) := PDF(X,x): \)
+              <br>
+              \( plot(&phi;(x) ,x=-4..4,gridlines) \)
+            </div>
+            <div class="output">
+              $$ [img] $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F261</p>
+            Fordelingsfunktion
+            $$ \Phi(a) = \int_{-\infty}^a \ &phi;(x) \ dx $$
+          </div>
+          <div class="maple">
+            <p>M261</p>
+            <div class="input">
+              \( \Phi(a) := CDF(X,a): \)
+              <br>
+              \( plot(\Phi(a) ,a=-4..4,gridlines) \)
+            </div>
+            <div class="output">
+              $$ [img] $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F262</p>
+            Sandsynligheden for, at \(X\) er større end eller lig med \(a\)
+            $$ \Phi(X \ge a) = 1 - \Phi(a) $$
+          </div>
+          <div class="maple">
+            <p>M262</p>
+            for \(a=0\)
+            <br><br>
+            <div class="input">
+              \( 1 - CDF(X,0.) \)
+            </div>
+            <div class="output">
+              $$ 0.5000 $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F263</p>
+            Sandsynligheden for, at \(X\) er større end eller lig med \(a\) og mindre eller lig med \(b\)
+            $$ \Phi(a \le X \le b) = \Phi(b) - \Phi(a) $$
+          </div>
+
+          <div class="maple">
+            <p>M263</p>
+            for \( a=2 \) og \( b=-2 \)
+            <br><br>
+            <div class="input">
+              \( CDF(X, 2)-CDF(X, -2) \)
+            </div>
+            <div class="output">
+              $$ \textrm{erf}(\sqrt{2}) $$
+            </div>
+            <div class="input">
+              \( \xrightarrow{\text{at 10 digits}} \)
+            </div>
+            <div class="output">
+              $$ 0.9544997360 $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F264</p>
+            <i>Normalfordelt stokastisk variabel \(X\) med middelværdi \(&mu;\) og spredning \(&sigma;\)</i>
+            $$ X \sim N(&mu;,&sigma;) $$
+          </div>
+          <div class="maple">
+            <p>M264</p>
+            <div class="input">
+              \( X=RandomVariable(Normal(&mu;,&sigma;)): \)
+              <br>
+              \( X=RandomVariable(Normal(10,2)): \)
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F265</p>
+            Fordelingsfunktion
+            $$ F(x) = \Phi \left( {x - &mu; \over &sigma;} \right) $$
+          </div>
+          <div class="maple">
+            <p>M265</p>
+            <div class="input">
+              \( X=RandomVariable(Normal(10,2)): \)
+              <br>
+              \( F(x) := PDF(X,x): \)
+              <br>
+              \( plot(F(x),x=0..20,y=0..0.25,gridlines) \)
+            </div>
+            <div class="output">
+              $$ [img] $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F266</p>
+            Fordelingsfunktion
+            $$ f(x) = { 1 \over \sqrt{2} \cdot &sigma;} \mathrm{e}^{ -{1 \over 2} \left( {x - &mu; \over &sigma;}
+            \right)^2
+            } $$
+          </div>
+          <div class="maple">
+            <p>M266</p>
+            <div class="input">
+              \( X=RandomVariable(Normal(10,2)): \)
+              <br>
+              \( f(x) := CDF(X,x): \)
+              <br>
+              \( plot(f(x),x=0..20,y=0..0.25,gridlines) \)
+            </div>
+            <div class="output">
+              $$ [img] $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F267</p>
+            Sandsynlighed for, at \(X\) er mindre end eller lig med \(a\)
+            $$ P(X \le a) = \int_{-\infty}^a \ f(x) \ dx $$
+            $$ P(X \le a) = \Phi \left( {a - &mu; \over &sigma;} \right) $$
+          </div>
+          <div class="maple">
+            <p>M267</p>
+            <div class="input">
+              \( X=RandomVariable(Normal(10,2)): \)
+            </div>
+            <br>
+            for \( a = 10 \)
+            <br><br>
+            <div class="input">
+              \( CDF(X,10) \)
+            </div>
+            <div class="output">
+              $$ {1 \over 2} $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F268</p>
+            Sandsynlighed for, at \(X\) er større end eller lig med \(a\)
+            $$ P(X \ge a) = 1 - P(X \le a) $$
+            $$ P(X \ge a) = 1 - \Phi \left( {a - &mu; \over &sigma;} \right) $$
+          </div>
+          <div class="maple">
+            <p>M268</p>
+            <div class="input">
+              \( X=RandomVariable(Normal(10,2)): \)
+            </div>
+            <br>
+            for \( a = 10 \)
+            <br><br>
+            <div class="input">
+              \( 1 - CDF(X,10) \)
+            </div>
+            <div class="output">
+              $$ {1 \over 2} $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F269</p>
+            Sandsynlighed for, at \(X\) er større end eller lig med \(a\) og mindre end eller lig med \(b\)
+            $$ P(a \le X \le b) = P(X \le b) - P(X \le a) $$
+            $$ P(a \le X \le b) = \Phi \left( {b - &mu; \over &sigma;} \right) - \Phi \left( {a - &mu; \over &sigma;}
+            \right) $$
+          </div>
+          <div class="maple">
+            <p>M269</p>
+            <div class="input">
+              \( X=RandomVariable(Normal(10,2)): \)
+            </div>
+            <br>
+            for \( a = 6 \) og \( b = 14 \)
+            <br><br>
+            <div class="input">
+              \( CDF(X,14) - CDF(X,6) \)
+            </div>
+            <div class="output">
+              $$ \textrm{erf}(\sqrt{2}) $$
+            </div>
+            <div class="input">
+              \( \xrightarrow{\text{at 5 digits}} \)
+            </div>
+            <div class="output">
+              $$ 0.95450 $$
+            </div>
+          </div>
+
+          <div class="formel">
+            <p>F270</p>
+            Fraktilplot
+            <br>
+            QQ-plot
+            $$ \textrm{y-aksen har} \ y = \Phi^{-1} \left( {b - &mu; \over &sigma;} \right) \textrm{og x-aksen har} \
+            &mu;
+            \pm n \cdot &sigma; $$
+          </div>
+          <div class="maple">
+            <p>M270</p>
+            <div class="input">
+              \( X := Sample(Normal(10, 2), 100): \)
+              <br>
+              \( Y := Sample(Normal(10, 2), 100): \)
+              <br>
+              \( QuantilePlot(X,Y) \)
+            </div>
+            <div class="output">
+              $$ [img] $$
+            </div>
+          </div>
+
         </div>
 
       </div>

@@ -8,7 +8,7 @@ body
 
 .wrapper
     width: 90vw
-    max-width: 750px
+    max-width: 900px
     position: relative
     left: 50%
     transform: translate(-50%,0)
@@ -80,7 +80,13 @@ a
 .formel
     background-color: #fafafa
     padding: 20px 40px
+    padding-bottom: 20px
     margin-top: 10px
+
+.maple
+    background-color: #f4f4ff
+    padding: 20px 40px
+    padding-bottom: 20px
 
 .input
     color: #000
@@ -90,10 +96,6 @@ a
 
 .mathml
     margin-top: 150px
-
-.maple
-    background-color: #f4f4ff
-    padding: 10px 40px
 
 .maple p
     color: $button
@@ -106,14 +108,14 @@ a
 h2
     margin-top: 100px
 
-.section-title > h2
+.sectionTitle > h2
     margin: 0
     color: $button
 
-.section-title > svg
+.sectionTitle > svg
     fill: #aaa
     
-.section-title
+.sectionTitle
     margin-bottom: 40px
     padding: 20px 0px
     transition: 0.2s ease-in-out
@@ -123,22 +125,29 @@ h2
     &:hover
         cursor: pointer
 
-.section-title svg
+.sectionTitle svg
     transition: transform 0.2s ease-out
 
 .blocks
     overflow: hidden
     transition: max-height 0.2s ease-out
-    max-height: 300vh
+    //max-height: 6000px
     margin-bottom: 80px
 
 .sectionTitleClosed
     margin-bottom: 0px
 
+
 .blocksClosed
-    max-height: 0
+    display: none
     margin: 0
 
 .triangleClosed
     transform: rotate(90deg)
 
+@media only screen and (max-width: 900px)
+    .input
+        overflow: scroll
+
+    .output
+        overflow: scroll
