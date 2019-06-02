@@ -93,6 +93,8 @@ a
 
 .output
     color: #00f
+    display: flex
+    justify-content: center
 
 .mathml
     margin-top: 150px
@@ -117,7 +119,7 @@ h2
     
 .sectionTitle
     margin-bottom: 40px
-    padding: 20px 0px
+    padding: 10px 0px
     transition: 0.2s ease-in-out
     display: flex
     align-items: center
@@ -137,7 +139,6 @@ h2
 .sectionTitleClosed
     margin-bottom: 0px
 
-
 .blocksClosed
     display: none
     margin: 0
@@ -145,7 +146,14 @@ h2
 .triangleClosed
     transform: rotate(90deg)
 
+.output img
+    height: 300px
+
 @media only screen and (max-width: 900px)
+
+    .wrapper
+        width: 95vw
+
     .input
         overflow: scroll
 
