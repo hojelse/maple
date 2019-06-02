@@ -13,7 +13,7 @@ body
     left: 50%
     transform: translate(-50%,0)
     padding-top: 10vh
-    padding-bottom: 10vh
+    padding-bottom: 50vh
 
 .header
     text-align: center
@@ -114,7 +114,6 @@ h2
     fill: #aaa
     
 .section-title
-    margin-top: 80px
     margin-bottom: 40px
     padding: 20px 0px
     transition: 0.2s ease-in-out
@@ -123,4 +122,23 @@ h2
     justify-content: space-between
     &:hover
         cursor: pointer
+
+.section-title svg
+    transition: transform 0.2s ease-out
+
+.blocks
+    overflow: hidden
+    transition: max-height 0.2s ease-out
+    max-height: 300vh
+    margin-bottom: 80px
+
+.sectionTitleClosed
+    margin-bottom: 0px
+
+.blocksClosed
+    max-height: 0
+    margin: 0
+
+.triangleClosed
+    transform: rotate(90deg)
 

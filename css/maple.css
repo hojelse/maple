@@ -12,7 +12,7 @@ body {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-bottom: 50vh;
 }
 
 .header {
@@ -155,7 +155,6 @@ h2 {
 }
 
 .section-title {
-  margin-top: 80px;
   margin-bottom: 40px;
   padding: 20px 0px;
   -webkit-transition: 0.2s ease-in-out;
@@ -173,5 +172,34 @@ h2 {
 
 .section-title:hover {
   cursor: pointer;
+}
+
+.section-title svg {
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+}
+
+.blocks {
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  max-height: 300vh;
+  margin-bottom: 80px;
+}
+
+.sectionTitleClosed {
+  margin-bottom: 0px;
+}
+
+.blocksClosed {
+  max-height: 0;
+  margin: 0;
+}
+
+.triangleClosed {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 /*# sourceMappingURL=maple.css.map */
