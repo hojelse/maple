@@ -63,33 +63,41 @@
 
 
     <div class="mathml">
-
-      <div class="header">
-        <h1>Mat A Formelsamling (web)</h1>
-      </div>
-      <p>
-        Kontakt mig gerne på info@hojelse.com hvis du finder fejl :)
-        <br><br>
-        Maple Mat A stx Formelsamling (Web version)
-        <br><br>
-        Dette er en slags 'udvidelse' af "Matematik formelsamling, stx A-niveau, maj 2018" af undervisningsministeriet
-        <br>
-        Formler fra formelsamlingen er flettet sammen med Maple procedurer (programmets kommandoer/funktioner)
-        <br><br>
-      </p>
-
       <div class="section">
+
         <div class="blocks">
+          <div class="header">
+            <h1>Mat A Formelsamling (web)</h1>
+          </div>
+          <div class="block-formula">
+            <p>Maple Mat A stx Formelsamling (Web version)</p>
+            <div class=" formula-text">
+              Kontakt mig gerne på info@hojelse.com hvis du finder fejl!
+            </div>
+          </div>
+        </div>
+
+        <a onclick="sectionToggle(this);" class="sectionTitle">
+          <h2>
+            Forord
+          </h2>
+          <svg class="" height="20px" width="25px">
+            <path stroke="#666" stroke-width="3px" stroke-linecap="round" d="M2,5 12.5,18 23,5" style="fill:none;" />
+          </svg>
+        </a>
+
+        <div class="blocks">
+
           <div class="block-formula">
             <p>FORMELSAMLING</p>
-            Baseret på uvm formelsamling stx mat a maj 2018
+            Baseret på undervisningsministeriets Formelsamling STX Mat A maj 2018
             <br><br>
             https://uvm.dk/-/media/filer/uvm/udd/gym/pdf18/jun/180601-formelsamling-matematik-a---stx-2018.pdf?la=da
           </div>
           <div class="block-maple">
             <p>MAPLE</p>
             <div class="maple-text">
-              Find uddybende beskrivelser af kommandoerne i dokumentation på nettet her:
+              Find uddybende beskrivelser af Maples procedurer (kommandoer) i dokumentationen på nettet her:
             </div>
             <br>
             <div class="maple-text">
@@ -97,9 +105,21 @@
             </div>
             <br>
             <div class="maple-text">
-              eller 'Maple Help', burde være downloadet lokalt med programmet Maple, genvejstast F1 > Gym
+              eller 'Maple Help', burde være downloadet lokalt med programmet Maple, genvejstast F1
             </div>
+            <br>
+            <p>GYMPAKKEN</p>
+            <div class="maple-text">
+              Gympakken er en udvidelsespakke til Maple for danske gymnasier download den her
+              www.maplesoft.com/maplegym/
+            </div>
+            <br>
+            <div class="maple-text">
+              Find dokumentationen til Gympakken under 'Maple Help' og derefter undersiden 'Gym', genvejstast F1 > Gym
+            </div>
+            <img style="margin-top: 40px; height: 400px;" src="/images/maplehelp.png" alt="">
           </div>
+
         </div>
 
         <a onclick="sectionToggle(this);" class="sectionTitle">
@@ -551,7 +571,7 @@
           </div>
 
           <div class="block-maple" style="margin-top: 10px;">
-            <p>Sinus radiantal og gradtal</p>
+            <p>Sinus - radiantal og gradtal</p>
             <div class="maple-text">
               sinus - radiantal
             </div>
@@ -1001,9 +1021,8 @@
         </a>
 
         <div class="blocks">
+
           <div class="block-maple">
-            ! mangler blocks
-            <br>
             <div class="maple-text">
               Maple pakker i dette afsnit
             </div>
@@ -1012,6 +1031,192 @@
               \( with(Student[Precalculus]): \)
             </div>
           </div>
+
+          <div class="block-formula">
+            <p>F62</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Ligning for linjen \(l\) gennem \(Q(0,b)\) med hældningskoefficient \(a\)
+            </div>
+            <div class="formula">
+              $$ y = a \cdot x + b $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F63</p>
+            <div class="formula-text">
+              Hældningskoefficient (stigningstal) \(a\) for linjen \(l\) gennem \(A(x_1,y_1)\) og \(B(x_2,y_2)\)
+            </div>
+            <div class="formula">
+              $$ a = \frac{y_2 - y_1}{x_2 - x_1} $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F64</p>
+            <div class="formula-text">
+              Skæring med \(y\)-aksen
+            </div>
+            <div class="formula">
+              $$ b = y_1 - a \cdot x_1 $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F65</p>
+            <div class="formula-text">
+              Ligning for linjen \(l\) gennem \(A(x_1, y_1)\) med hældningskoefficient \(a\)
+            </div>
+            <div class="formula">
+              $$ y = a \cdot (x - x_1) + y $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F66</p>
+            <div class="formula-text">
+              Hældningsvinklen \(v\) er vinklen fra førsteaksen til \(l\) regnet med fortegn
+            </div>
+            <div class="formula">
+              $$ a = tan(v) $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F67</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Ligning for linjen \(l\) gennem \(P_0\) med normalvektor \( \vec{n} = \begin{bmatrix} a \\ b \end{bmatrix}
+              \)
+            </div>
+            <div class="formula">
+              $$ a \cdot (x - x_0) + b \cdot (y - y_0) = 0 $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F68</p>
+            <div class="formula-text">
+              Parameterfremstilling for linjen \(l\) gennem \(P_0\) med retningsvektor \( \vec{r} = \begin{bmatrix} r_1
+              \\ r_2 \end{bmatrix}
+              \)
+            </div>
+            <div class="formula">
+              $$ \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} x_0 \\ y_0 \end{bmatrix} + t \begin{bmatrix} r_1
+              \\ r_2 \end{bmatrix} $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F69</p>
+            <div class="formula-text">
+              Afstand \( |AB| \) mellem to punkter \(A(x_1,y_1)\) og \(B(x_2,y_2)\)
+            </div>
+            <div class="formula">
+              $$ |AB| = \sqrt{ (x_2 - x_1)^2 + (y_2 - y_1)^2 } $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F70</p>
+            <div class="formula-text">
+              Midpunkt \(M\) for linjestykke \(AB\)
+            </div>
+            <div class="formula">
+              $$ M \left( \frac{x_1 + x_2}{2} , \frac{y_1 + y_2}{2} \right) $$
+            </div>
+          </div>
+          <div class="block-maple">
+            <p>M70</p>
+            <div class="input">
+              \( Midpoint([0,0],[1,1]) \)
+            </div>
+            <div class="output">
+              $$ \left[ \frac{1}{2} , \frac{1}{2} \right] $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F71</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Afstand \(dist(P,l)\) fra punktet \(P(x_1,y_1)\) til linjen \(l\) med ligningen \( y = a \cdot x + b \)
+            </div>
+            <div class="formula">
+              $$ dist(P,l) = \frac{ \left| a \cdot x_1 + b - y_1 \right| }{ \sqrt{a^2 + 1} } $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F72</p>
+            <div class="formula-text">
+              Afstand \(dist(P,l)\) fra punktet \(P(x_1,y_1)\) til linjen \(l\) med ligningen \( a \cdot x + b \cdot y +
+              c = 0 \)
+            </div>
+            <div class="formula">
+              $$ dist(P,l) = \frac{ \left| a \cdot x_1 + b \cdot y_1 + c \right| }{ \sqrt{a^2 + b^2} } $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F73</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Ligning for cirkel med centrum i \( C(a,b) \) og radius \(r\)
+            </div>
+            <div class="formula">
+              $$ (x-a)^2 + (y-b)^2 = r^2 $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F74</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Ligning for parabel med symmetriakse parallel med andenaksen
+            </div>
+            <div class="formula">
+              $$ y = a \cdot x^2 + b \cdot x + c $$
+            </div>
+            <div class="formula">
+              $$ y = a \cdot (x-h)^2 + k $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F75</p>
+            <div class="formula-text">
+              Toppunkt \(T\)
+            </div>
+            <div class="formula">
+              $$ T(h,k) = T \left( \frac{-b}{2a} , \frac{-d}{4a} \right) \ , $$
+            </div>
+            <div class="formula">
+              $$ \textrm{hvor} \ d = b^2 - 4ac $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F76</p>
+            <div class="formula-text">
+              Skæringspunkter \(S_1\) og \(S_2\) med førsteaksen
+            </div>
+            <div class="formula">
+              $$ S_1\left( \frac{-b - \sqrt{d} }{2a} , 0 \right) \ , S_2\left( \frac{-b + \sqrt{d} }{2a} , 0 \right) $$
+            </div>
+          </div>
+
         </div>
 
         <a onclick="sectionToggle(this);" class="sectionTitle">
@@ -1024,9 +1229,44 @@
         </a>
 
         <div class="blocks">
-          <div class="block-maple">
-            ! mangler blocks
+
+          <div class="block-formula">
+            <p>F77</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Førstegradspolynomium, lineær funktion \(f\)
+            </div>
+            <div class="formula">
+              $$ f(x) = a \cdot x + b $$
+            </div>
           </div>
+
+          <div class="block-formula">
+            <p>F78</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Hældningskoefficienten \(a\) (stigningstallet) ud fra to punkter på grafen \( (x_1,y_1) \) og \( (x_2,y_2)
+              \)
+            </div>
+            <div class="formula">
+              $$ f(x) = a \cdot x + b $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F79</p>
+            <div class="formula-text">
+              Skæring med \(y\)-aksen
+            </div>
+            <div class="formula">
+              $$ b = y_1 - a \cdot x_1 $$
+            </div>
+          </div>
+
         </div>
 
         <a onclick="sectionToggle(this);" class="sectionTitle">
@@ -1039,9 +1279,43 @@
         </a>
 
         <div class="blocks">
-          <div class="block-maple">
-            ! mangler blocks
+
+          <div class="block-formula">
+            <p>F80</p>
+            <div class="formula-text">
+              Andengradspolynomium \(p\) med nulpunkter (rødder) \(x_1\) og \(x_2\)
+            </div>
+            <div class="formula">
+              $$ p(x) = a \cdot x^2 + b \cdot x + c $$
+            </div>
+            <div class="formula">
+              $$ p(x) = a \cdot (x - x_1) \cdot (x - x_2) $$
+            </div>
           </div>
+
+          <div class="block-formula">
+            <p>F81</p>
+            <div class="formula-text">
+              Nulpunkter (rødder)
+            </div>
+            <div class="formula">
+              $$ x_1 = \frac{-b - \sqrt{d} }{2a} , \ x_2 = \frac{-b + \sqrt{d} }{2a} \ , $$
+            </div>
+            <div class="formula">
+              $$ \textrm{hvor} \ d = b^2 - 4ac $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F82</p>
+            <div class="formula-text">
+              Toppunkt \(T\)
+            </div>
+            <div class="formula">
+              $$ T \left( \frac{-b}{2a} , \frac{-d}{4a} \right) \ , $$
+            </div>
+          </div>
+
         </div>
 
         <a onclick="sectionToggle(this);" class="sectionTitle">
@@ -1054,9 +1328,169 @@
         </a>
 
         <div class="blocks">
-          <div class="block-maple">
-            ! mangler blocks
+
+          <div class="block-formula">
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Grafen for den naturlige logaritmefunktion
+            </div>
           </div>
+
+          <div class="block-formula">
+            <p>F83</p>
+            <div class="formula">
+              $$ \ln (x) \rightarrow - \infty \ \textrm{for} \ x \rightarrow 0 $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F84</p>
+            <div class="formula">
+              $$ \ln (x) \rightarrow \infty \ \textrm{for} \ x \rightarrow \infty $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F85</p>
+            <div class="formula">
+              $$ y = \ln (x) \ \Leftrightarrow \ x = { \textrm{e} }^y $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F86</p>
+            <div class="formula">
+              $$ \ln (\textrm{e}) = 1 $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F87</p>
+            <div class="formula">
+              $$ \ln(a \cdot b) = \ln(a) + \ln(b) $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F88</p>
+            <div class="formula">
+              $$ \ln\left( \frac{a}{b} \right) = \ln(a) - \ln(b) $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F89</p>
+            <div class="formula">
+              $$ \ln(a^r) = r \cdot \ln(a) $$
+            </div>
+          </div>
+
+          <div class="block-maple" style="margin-top: 10px;">
+            <p>Den naturlige logaritme i Maple</p>
+            <div class="maple-text">
+              I Maple er både ln(x), log(x) og log[e](x) den naturlige logaritme
+            </div>
+            <br>
+            <div class="inut">
+              \( \ln(x) \)
+            </div>
+            <div class="output">
+              $$ \ln(x) $$
+            </div>
+            <div class="inut">
+              \( \log(x) \)
+            </div>
+            <div class="output">
+              $$ \ln(x) $$
+            </div>
+            <div class="inut">
+              \( \log[ \textrm{e} ](x) \)
+            </div>
+            <div class="output">
+              $$ \ln(x) $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Grafen for den logaritmefunktion med grundtal 10
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F90</p>
+            <div class="formula">
+              $$ \log (x) \rightarrow - \infty \ \textrm{for} \ x \rightarrow 0 $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F91</p>
+            <div class="formula">
+              $$ \log (x) \rightarrow \infty \ \textrm{for} \ x \rightarrow \infty $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F92</p>
+            <div class="formula">
+              $$ y = \log (x) \ \Leftrightarrow \ x = 10^y $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F93</p>
+            <div class="formula">
+              $$ \log(10) = 1 $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F94</p>
+            <div class="formula">
+              $$ \log(a \cdot b) = \log(a) + \log(b) $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F95</p>
+            <div class="formula">
+              $$ \log\left( \frac{a}{b} \right) = \log(a) - \log(b) $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F89</p>
+            <div class="formula">
+              $$ \log(a^r) = r \cdot \log(a) $$
+            </div>
+          </div>
+
+          <div class="block-maple" style="margin-top: 10px;">
+            <p>10-tals-logaritmen i Maple</p>
+            <div class="maple-text">
+              I Maple angiver man logaritmens grundtal i kanteparanteser
+            </div>
+            <br>
+            <div class="inut">
+              \( \log[10](x) \)
+            </div>
+            <div class="output">
+              $$ \frac{ln(x)}{ln(10)} $$
+            </div>
+            <div class="inut">
+              \( \log[10](10000) \)
+            </div>
+            <div class="output">
+              $$ 4 $$
+            </div>
+          </div>
+
         </div>
 
         <a onclick="sectionToggle(this);" class="sectionTitle">
@@ -1069,9 +1503,81 @@
         </a>
 
         <div class="blocks">
-          <div class="block-maple">
-            ! mangler blocks
+
+          <div class="block-formula">
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Grafen for en eksponentielt voksende funktion \(f\) , hvor \(a &gt; 1\) , vækstraten \(r &gt; 0\) og \(k
+              &gt; 0\)
+            </div>
           </div>
+
+          <div class="block-formula">
+            <p>F97</p>
+            <div class="formula">
+              $$ f(x) = b \cdot a^x $$
+            </div>
+            <div class="formula">
+              $$ f(x) = b \cdot (1 + r)^x $$
+            </div>
+            <div class="formula">
+              $$ f(x) = b \cdot \textrm{e}^{k \cdot x} \ , \textrm{hvor} \ k = \ln(a) $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F98</p>
+            <div class="formula">
+              $$ f(x) \rightarrow \infty \ \textrm{for} \ x \rightarrow \infty $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F99</p>
+            <div class="formula">
+              $$ f(x) \rightarrow 0 \ \textrm{for} \ x \rightarrow - \infty $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F100</p>
+            <div class="formula-text">
+              Fremskrivningsfaktoren \(a\) ud fra to punkter på grafen \((x_1,y_1)\) og \((x_2,y_2)\)
+            </div>
+            <div class="formula">
+              $$ a = \sqrt[x_2 - x_1]{ \frac{y_2}{y_1} } = {\left( \frac{y_2}{y_1} \right)}^{ \frac{1}{x_2 - x_1} } $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F101</p>
+            <div class="formula-text">
+              Skæring med \(y\)-aksen
+            </div>
+            <div class="formula">
+              $$ b = \frac{y_1}{a^{x_1}} $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F102</p>
+            <div class="formula-text">
+              Fordoblingskonstanten \(T_2\)
+            </div>
+            <div class="formula">
+              $$ T_2 = x_2 - x_1 $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F103</p>
+            <div class="formula">
+              $$ T_2 = \frac{\log(2)}{\log(a)} = \frac{\ln(2)}{\ln(a)} = \frac{\ln(2)}{k} $$
+            </div>
+          </div>
+
         </div>
 
         <a onclick="sectionToggle(this);" class="sectionTitle">
@@ -1084,9 +1590,83 @@
         </a>
 
         <div class="blocks">
-          <div class="block-maple">
-            ! mangler blocks
+
+          <div class="block-formula">
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Grafen for en eksponentielt aftagende funktion \(f\) , hvor \(0 &lt; a &lt; 1\) , vækstraten \(r &lt; 0\)
+              og \(k &lt; 0\)
+            </div>
           </div>
+
+          <div class="block-formula">
+            <p>F104</p>
+            <div class="formula">
+              $$ f(x) = b \cdot a^x $$
+            </div>
+            <div class="formula">
+              $$ f(x) = b \cdot (1 + r)^x $$
+            </div>
+            <div class="formula">
+              $$ f(x) = b \cdot \textrm{e}^{k \cdot x} \ , \textrm{hvor} \ k = \ln(a) $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F105</p>
+            <div class="formula">
+              $$ f(x) \rightarrow 0 \ \textrm{for} \ x \rightarrow \infty $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F106</p>
+            <div class="formula">
+              $$ f(x) \rightarrow \infty \ \textrm{for} \ x \rightarrow - \infty $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F107</p>
+            <div class="formula-text">
+              Fremskrivningsfaktoren \(a\) ud fra to punkter på grafen \((x_1,y_1)\) og \((x_2,y_2)\)
+            </div>
+            <div class="formula">
+              $$ a = \sqrt[x_2 - x_1]{ \frac{y_2}{y_1} } = {\left( \frac{y_2}{y_1} \right)}^{ \frac{1}{x_2 - x_1} } $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F108</p>
+            <div class="formula-text">
+              Skæring med \(y\)-aksen
+            </div>
+            <div class="formula">
+              $$ b = \frac{y_1}{a^{x_1}} $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F109</p>
+            <div class="formula-text">
+              Halveringskonstanten \(T_2\)
+            </div>
+            <div class="formula">
+              $$ T_{ \frac{1}{2} } = x_2 - x_1 $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F110</p>
+            <div class="formula">
+              $$ T_{ \frac{1}{2} } = \frac{\log\left( \frac{1}{2} \right)}{\log(a)} = \frac{\ln\left( \frac{1}{2}
+              \right)}{\ln(a)} =
+              \frac{\ln\left( \frac{1}{2} \right)}{k} $$
+            </div>
+          </div>
+
         </div>
 
         <a onclick="sectionToggle(this);" class="sectionTitle">
@@ -1099,9 +1679,64 @@
         </a>
 
         <div class="blocks">
-          <div class="block-maple">
-            ! mangler blocks
+
+          <div class="block-formula">
+            <p>F111</p>
+            <div class="formula-text">
+              Potensfunktion
+            </div>
+            <div class="formula">
+              $$ f(x) = b \cdot x^a $$
+            </div>
           </div>
+
+          <div class="block-formula">
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Grafer for \( f(x) = x^a \)
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F112</p>
+            <div class="formula-text">
+              Bestemmelse af tallet \(a\) ud fra to punkter på grafen \((x_1,y_1)\) og \((x_2,y_2)\)
+            </div>
+            <div class="formula">
+              $$ a = \frac{ \log(y_2) - \log(y_1) }{ \log(x_2) - \log(x_1) } = \frac{ \ln(y_2) - \ln(y_1) }{ \ln(x_2) -
+              \ln(x_1) } $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F113</p>
+            <div class="formula">
+              $$ b = \frac{y_1}{ {x_1}^a } $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F114</p>
+            <div class="formula-text">
+              Når \(x\) ganges med tallet \(1 + r_x\) , så ganges \(f(x)\) med tallet \(1 + r_y\)
+            </div>
+            <div class="formula">
+              $$ 1 + r_y = (1 + r_x)^a $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F115</p>
+            <div class="formula-text">
+              Når \(x\) ganges med tallet \(k\) , så ganges \(f(x)\) med tallet \(k^a\)
+            </div>
+            <div class="formula">
+              $$ f(k \cdot x) = k^a \cdot f(x) $$
+            </div>
+          </div>
+
         </div>
 
         <a onclick="sectionToggle(this);" class="sectionTitle">
@@ -1114,9 +1749,210 @@
         </a>
 
         <div class="blocks">
+
           <div class="block-maple">
-            ! mangler blocks
+            <div class="maple-text">
+              Maple pakker i dette afsnit
+            </div>
+            <br>
+            <div class="input">
+              \( with(Gym): \)
+            </div>
           </div>
+
+          <div class="block-maple" style="margin-top: 10px;">
+            <p>Sinus - radiantal og gradtal</p>
+            <div class="maple-text">
+              sinus - radiantal
+            </div>
+            <div class="maple-text">
+              Procedure fra Maple som standard: \(sin()\)
+            </div>
+            <br>
+            <div class="input">
+              \( sin\left( \frac{\pi}{6} \right) \)
+            </div>
+            <div class="output">
+              $$ \frac{1}{2} $$
+            </div>
+            <br>
+            <div class="maple-text">
+              sinus - gradtal
+            </div>
+            <div class="maple-text">
+              Procedure fra 'Gympakken': \(Sin()\)
+            </div>
+            <br>
+            <div class="input">
+              \( Sin(30) \)
+            </div>
+            <div class="output">
+              $$ 0.5000000000 $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F116</p>
+            <div class="formula-text">
+              Gradtal \(v\) omsat til radiantal \(x\)
+            </div>
+            <div class="formula">
+              $$ x = \frac{v}{360} \cdot 2 \pi \ \textrm{radian} $$
+            </div>
+          </div>
+          <div class="block-maple">
+            <p>M116</p>
+            <div class="input">
+              \( convert(90 \ degrees, \ radians) \)
+            </div>
+            <div class="output">
+              $$ \frac{\pi}{2} $$
+            </div>
+
+          </div>
+
+          <div class="block-formula">
+            <p>F117</p>
+            <div class="formula-text">
+              Radiantal \(x\) omsat til gradtal \(v\)
+            </div>
+            <div class="formula">
+              $$ v = \frac{x}{2 \pi} \cdot 360 \ \textrm{grader} $$
+            </div>
+          </div>
+          <div class="block-maple">
+            <p>M117</p>
+            <div class="input">
+              \( convert \left( \frac{\pi}{2} , degrees \right) \)
+            </div>
+            <div class="output">
+              $$ 90 \ degrees $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <br>
+            <div class="formula-text">
+              Definition af \(cos(x)\) og \(sin(x)\)
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F118</p>
+            <div class="formula">
+              $$ cos^2(x) + sin^2(x) = 1 $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <div class="formulatext">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Grafen for cosinus
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F119</p>
+            <div class="formula-">
+              $$ cos(x + 2 \pi) = cos(x) $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F120</p>
+            <div class="formula-">
+              $$ cos(-x) = cos(x) $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F121</p>
+            <div class="formula-">
+              $$ cos(\pi - x) = -cos(x) $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <div class="formulatext">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Grafen for sinus
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F122</p>
+            <div class="formula-">
+              $$ sin(x + 2 \pi) = sin(x) $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F123</p>
+            <div class="formula-">
+              $$ sin(-x) = -sin(x) $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F124</p>
+            <div class="formula-">
+              $$ sin(\pi - x) = sin(x) $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F125</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Definition af tangens
+            </div>
+            <div class="formula">
+              $$ tan(x) = \frac{sin(x)}{cos(x)} $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F126</p>
+            <div class="formula-text">
+              Udvalgte funktionsværdier
+            </div>
+            <div class="formula">
+              $$ [tabel] $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F127</p>
+            <div class="formula-text">
+              Harmonisk svingning \(f\)
+            </div>
+            <div class="formula">
+              $$ f(t) = A \cdot sin( \omega \cdot t + \varphi ) + d $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F128</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula">
+              Graf for harmonisk svingning \(f\) med amplitude \(A\) og periode (svingningstid) \(T\)
+            </div>
+            <div class="formula">
+              $$ T = t_2 - t_1 = \frac{ 2 \pi }{ \omega } $$
+            </div>
+          </div>
+
         </div>
 
         <a onclick="sectionToggle(this);" class="sectionTitle">
@@ -1129,9 +1965,84 @@
         </a>
 
         <div class="blocks">
-          <div class="block-maple">
-            ! mangler blocks
+
+          <div class="block-formula">
+            <p>F129</p>
+            <div class="formula-text">
+              Differentialkvotienten \( f'(x_0) \) for funktionen \(f\) i tallet \(x_0\)
+            </div>
+            <div class="formula">
+              $$ f'(x_0) = \lim_{x \rightarrow x_0} \frac{f(x) - f(x_0)}{x - x_0} $$
+            </div>
+            <div class="formula">
+              $$ f'(x_0) = \lim_{h \rightarrow 0} \frac{f(x + h) - f(x_0)}{h} $$
+            </div>
           </div>
+
+          <div class="block-formula">
+            <p>F130</p>
+            <div class="formula-text">
+              Ligning for tangenten \(t\) til grafen for \(f\) i \( P(x_0,f'(x_0)) \)
+            </div>
+            <div class="formula">
+              $$ y = f'(x_0) \cdot (x - x_0) + f(x_0) $$
+            </div>
+            <div class="formula-text">
+              eller
+            </div>
+            <div class="formula">
+              $$ y = a \cdot x + b \ , $$
+            </div>
+            <div class="formula">
+              $$ \textrm{hvor} \ a = f'(x_0) \ \textrm{og} \ b = y_0 - a \cdot x_0 $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F131</p>
+            <div class="formula-text">
+              Regneregler for differentiation
+            </div>
+            <div class="formula">
+              $$ (k \cdot f(x))' = k \cdot f'(x) $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F132</p>
+            <div class="formula">
+              $$ (f(x) + g(x))' = f'(x) + g'(x) $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F133</p>
+            <div class="formula">
+              $$ (f(x) - g(x))' = f'(x) - g'(x) $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F134</p>
+            <div class="formula">
+              $$ (f(x) \cdot g(x))' = f'(x) \cdot g(x) + f(x) \cdot g'(x) $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F135</p>
+            <div class="formula">
+              $$ (f(a \cdot x + b))' = a \cdot f'(a \cdot x +b) $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F136</p>
+            <div class="formula">
+              $$ (f(g(x)))' = f'(g(x)) \cdot g'(x) $$
+            </div>
+          </div>
+
         </div>
 
         <a onclick="sectionToggle(this);" class="sectionTitle">
@@ -1189,9 +2100,144 @@
         </a>
 
         <div class="blocks">
-          <div class="block-maple">
-            ! mangler blocks
+
+          <div class="block-formula">
+            <p>F169</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Arealet \(A\) af det markerede område
+            </div>
+            <div class="formula">
+              $$ A = \int_{a}^b f(x) \ dx $$
+            </div>
           </div>
+          <div class="block-maple">
+            <p>M169</p>
+            <div class="input">
+              \( f(x) := 0.08x^3 - 1.24x^2 + 4.74x + 2.92: \)
+            </div>
+            <div class="input">
+              \( A = \int_{2}^{10} f(x) \ dx \)
+            </div>
+            <div class="output">
+              $$ A = 40.53333333 $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F170</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Arealet \(A\) af det markerede område
+            </div>
+            <div class="formula">
+              \( A = \int_{a}^{b} (f(x) - g(x)) \ dx \)
+            </div>
+          </div>
+          <div class="block-maple">
+            <p>M170</p>
+            <div class="input">
+              \( f(x) := 0.08x^3 - 1.24x^2 + 4.74x + 2.92: \)
+            </div>
+            <div class="input">
+              \( g(x) := -0.04x^3 + 0.76x^2 - 5.2x + 11.48: \)
+            </div>
+            <div class="input">
+              \( A = \int_{2}^{10} (f(x) - g(x)) \ dx \)
+            </div>
+            <div class="output">
+              $$ A = 46.82666667 $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F171</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Kurvelængden \(L\) af den markerede del af grafen
+            </div>
+            <div class="formula">
+              $$ L = \int_{a}^{b} \sqrt{1 + {f'(x)}^2} \ dx $$
+            </div>
+          </div>
+          <div class="block-maple">
+            <p>M171</p>
+            <div class="input">
+              \( f(x) := sin(x): \)
+            </div>
+            <div class="input">
+              \( L = \int_{0}^{2 \pi} \sqrt{1 + {f'(x)}^2} \ dx \)
+            </div>
+            <div class="output">
+              $$ L = 4 \sqrt{2} EllipticE\left( \frac{ \sqrt{2} }{ 2 } \right) $$
+            </div>
+            <div class="input">
+              \( \xrightarrow{\text{at 5 digits}} \)
+            </div>
+            <div class="output">
+              $$ L = 7.6400 $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F172</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Rumfanget \(V\) af omdrejningslegemet
+            </div>
+            <div class="formula">
+              $$ V = \pi \int_{a}^{b} {f(x)}^2 \ dx $$
+            </div>
+          </div>
+          <div class="block-maple">
+            <p>M172</p>
+            <div class="input">
+              \( f(x) := 0.08x^3 - 1.24x^2 + 4.74x + 2.92: \)
+            </div>
+            <div class="input">
+              \( V = \pi \int_{2}^{8} {f(x)}^2 \ dx \)
+            </div>
+            <div class="output">
+              $$ V = 657.7008595 $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F173</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Rumfanget \(V\) af hult omdrejningslegemet
+            </div>
+            <div class="formula">
+              $$ V = \pi \int_{a}^{b} ({f(x)}^2 - {g(x)}^2) \ dx $$
+            </div>
+          </div>
+          <div class="block-maple">
+            <p>M173</p>
+            <div class="input">
+              \( f(x) := 0.08x^3 - 1.24x^2 + 4.74x + 2.92: \)
+            </div>
+            <div class="input">
+              \( g(x) := 0.1x + 1: \)
+            </div>
+            <div class="input">
+              \( V = \pi \int_{2}^{8} ({f(x)}^2 - {g(x)}^2) \ dx \)
+            </div>
+            <div class="output">
+              $$ V = 657.7008595 $$
+            </div>
+          </div>
+
         </div>
 
         <a onclick="sectionToggle(this);" class="sectionTitle">
@@ -1244,9 +2290,8 @@
         </a>
 
         <div class="blocks">
+
           <div class="block-maple">
-            ! mangler img
-            <br><br>
             <div class="maple-text">
               Maple pakker i dette afsnit
             </div>
@@ -1258,6 +2303,9 @@
 
           <div class="block-formula">
             <p>F184</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
             <div class="formula-text">
               Vektorfunktioner med koordinatfunktioner \(x(t)\) og sandsynligheder \(y(t)\)
             </div>
@@ -1378,6 +2426,9 @@
           <div class="block-formula">
             <p>F188</p>
             <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
               Retningsvektor \( \vec v\) for tangenten i punktet \( P_0 \) svarende til parameterværdien \( t_0 \)
             </div>
             <div class="formula">
@@ -1414,6 +2465,9 @@
 
           <div class="block-formula">
             <p>F190</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
             <div class="formula-txet">
               Parameterfremstilling for en cirkel med centrum \(C(a,b)\) og radius \(r\)
             </div>
@@ -1450,6 +2504,9 @@
           <div class="block-formula">
             <p>F191</p>
             <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
               Grafen for en funktion af to variable
             </div>
             <div class="formula">
@@ -1459,6 +2516,9 @@
 
           <div class="block-formula">
             <p>F192</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
             <div class="formula-text">
               Grafen for en funktion af to variable
             </div>
@@ -1487,8 +2547,15 @@
 
           <div class="block-formula">
             <p>F193</p>
-            Niveaukurve for \(f\) i \(xy\)-plan
-            $$ f(x,y)=k $$
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Niveaukurve for \(f\) i \(xy\)-plan
+            </div>
+            <div class="formula">
+              $$ f(x,y)=k $$
+            </div>
           </div>
           <div class="block-maple">
             <div class="maple-text">
@@ -1647,11 +2714,13 @@
             <div class="output">
               $$ t = 6y $$
             </div>
-
           </div>
 
           <div class="block-formula">
             <p>F198</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
             <div class="formula-text">
               Lokalt maksimum i \( P_0(x_0,y_0,z_0) \)
             </div>
@@ -1662,8 +2731,12 @@
 
           <div class="block-formula">
             <p>F199</p>
-            Lokalt minimum i \( Q_0(x_0,y_0,z_0) \)
-            $$ r \cdot t - s^2 \gt 0 \ \textrm{og} \ r \gt 0 $$
+            <div class="formula-text">
+              Lokalt minimum i \( Q_0(x_0,y_0,z_0) \)
+            </div>
+            <div class="formula">
+              $$ r \cdot t - s^2 \gt 0 \ \textrm{og} \ r \gt 0 $$
+            </div>
           </div>
           <div class="block-maple">
             <p>M199</p>
@@ -1684,6 +2757,9 @@
 
           <div class="block-formula">
             <p>F200</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
             <div class="formula-text">
               Saddelpunkt i \( P_0(x_0,y_0,z_0) \)
             </div>
@@ -1730,6 +2806,7 @@
         </a>
 
         <div class="blocks">
+
           <div class="block-maple">
             ! mangler blocks
             <br><br>
@@ -1740,7 +2817,94 @@
             <div class="input">
               \( with(Gym): with(Statistics): \)
             </div>
+            <br><br>
+            <div class="maple-text">
+              Datasæt brugt i dette afsnit
+            </div>
+            <br>
+            <div class="input">
+              \( data := [0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 4, 4, 4, 6, 6, 6, 8, 9, 9, 9, 9, 10, 11]: \)
+            </div>
           </div>
+
+          <div class="block-formula">
+            <p>F202</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Histogram
+            </div>
+            <div class="formula">
+              Arealet af en blok svarer til intervallets frekvens
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F203</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Histogram med <i>ens</i> intervallængder
+            </div>
+            <div class="formula">
+              Højden af en blok svarer til intervallets frekvens
+            </div>
+          </div>
+          <div class="block-maple">
+            <p>M203</p>
+            <div class="input">
+              \( G := grupperData(data, -1 .. 11, 12) \)
+            </div>
+            <div class="output">
+              $$ [img] $$
+            </div>
+            <div class="input">
+              \( plotHistogram(G) \)
+            </div>
+            <div class="output">
+              $$ [img] $$
+            </div>
+            <div class="input">
+              \( Histogram(data) \)
+            </div>
+            <div class="output">
+              $$ [img] $$
+            </div>
+          </div>
+
+          <div class="block-formula">
+            <p>F204</p>
+            <div class="formula-text">
+              \( [img] \)
+            </div>
+            <div class="formula-text">
+              Sumkurve
+            </div>
+            <div class="formula">
+              $$ Q_1: \ \textrm{nedre kvartil} \ 25\% \textrm{-fraktilen} $$
+            </div>
+            <div class="formula">
+              $$ m: \ \textrm{median} \ 50\% \textrm{-fraktilen} $$
+            </div>
+            <div class="formula">
+              $$ Q_3: \ \textrm{øvre kvartil} \ 75\% \textrm{-fraktilen} $$
+            </div>
+            <div class="formula">
+              $$ x_p: \ p\% \textrm{-fraktilen} $$
+            </div>
+          </div>
+          <div class="block-maple">
+            <p>M203</p>
+            <div class="input">
+              \( plotSumkurve(G) \)
+            </div>
+            <div class="output">
+              $$ [img] $$
+            </div>
+          </div>
+
         </div>
 
         <a onclick="sectionToggle(this);" class="sectionTitle">
