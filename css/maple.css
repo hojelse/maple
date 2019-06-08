@@ -35,7 +35,6 @@ body {
 
 img {
   height: 120px;
-  fill: #FF7269;
 }
 
 h1 {
@@ -108,14 +107,23 @@ a {
   cursor: pointer;
 }
 
-.formel {
+.block-formula {
   background-color: #fafafa;
   padding: 20px 40px;
   padding-bottom: 20px;
   margin-top: 10px;
 }
 
-.maple {
+.formula {
+  width: 100%;
+  overflow: auto;
+}
+
+.formula-text {
+  margin-bottom: 0.5rem;
+}
+
+.block-maple {
   background-color: #f4f4ff;
   padding: 20px 40px;
   padding-bottom: 20px;
@@ -123,6 +131,7 @@ a {
 
 .input {
   color: #000;
+  overflow: auto;
 }
 
 .output {
@@ -133,18 +142,19 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: auto;
 }
 
 .mathml {
   margin-top: 150px;
 }
 
-.maple p {
+.block-maple p {
   color: #666;
   font-weight: bold;
 }
 
-.formel p {
+.block-formula p {
   color: #666;
   font-weight: bold;
 }
@@ -211,18 +221,13 @@ h2 {
 }
 
 .output img {
-  height: 300px;
+  height: 200px;
+  mix-blend-mode: multiply;
 }
 
 @media only screen and (max-width: 900px) {
   .wrapper {
     width: 95vw;
-  }
-  .input {
-    overflow: scroll;
-  }
-  .output {
-    overflow: scroll;
   }
 }
 /*# sourceMappingURL=maple.css.map */
