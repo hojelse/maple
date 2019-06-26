@@ -33,7 +33,7 @@ body {
   margin-bottom: 80px;
 }
 
-img {
+.maple-icon {
   height: 120px;
 }
 
@@ -116,6 +116,7 @@ a {
 
 .formula {
   width: 100%;
+  padding: 5px 0;
   overflow: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,6 +140,7 @@ a {
 .input {
   color: #000;
   overflow: auto;
+  padding: 5px 0;
 }
 
 .output {
@@ -150,6 +152,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: auto;
+  padding: 5px 0;
 }
 
 .mathml {
@@ -193,6 +196,7 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-bottom: solid rgba(0, 0, 0, 0);
 }
 
 .sectionTitle:hover {
@@ -215,6 +219,7 @@ h2 {
 
 .sectionTitleClosed {
   margin-bottom: 0px;
+  border-bottom: solid rgba(0, 0, 0, 0.05);
 }
 
 .blocksClosed {
@@ -227,9 +232,9 @@ h2 {
           transform: rotate(90deg);
 }
 
-.output img {
-  height: 200px;
+.formula-img {
   mix-blend-mode: multiply;
+  max-width: 200px;
 }
 
 @media only screen and (max-width: 900px) {

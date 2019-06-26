@@ -23,7 +23,7 @@ body
     flex-direction: column
     margin-bottom: 80px
 
-img
+.maple-icon
     height: 120px
     //fill: #FF7269
 
@@ -85,6 +85,7 @@ a
 
 .formula
     width: 100%
+    padding: 5px 0
     overflow: auto
     display: flex
     justify-content: center
@@ -101,12 +102,14 @@ a
 .input
     color: #000
     overflow: auto
+    padding: 5px 0
 
 .output
     color: #00f
     display: flex
     justify-content: center
     overflow: auto
+    padding: 5px 0
 
 .mathml
     margin-top: 150px
@@ -136,6 +139,7 @@ h2
     display: flex
     align-items: center
     justify-content: space-between
+    border-bottom: solid rgba(0,0,0,0)
     &:hover
         cursor: pointer
 
@@ -150,6 +154,7 @@ h2
 
 .sectionTitleClosed
     margin-bottom: 0px
+    border-bottom: solid rgba(0,0,0,0.05)
 
 .blocksClosed
     display: none
@@ -158,9 +163,9 @@ h2
 .triangleClosed
     transform: rotate(90deg)
 
-.output img
-    height: 200px
+.formula-img
     mix-blend-mode: multiply
+    max-width: 200px
 
 @media only screen and (max-width: 900px)
 
