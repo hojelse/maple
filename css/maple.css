@@ -131,6 +131,10 @@ a {
   margin-bottom: 0.5rem;
 }
 
+.formula-text > img {
+  mix-blend-mode: multiply;
+}
+
 .block-maple {
   background-color: #f4f4ff;
   padding: 20px 40px;
@@ -153,6 +157,10 @@ a {
           justify-content: center;
   overflow: auto;
   padding: 5px 0;
+}
+
+.output > img {
+  mix-blend-mode: multiply;
 }
 
 .mathml {
